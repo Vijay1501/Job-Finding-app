@@ -3,6 +3,7 @@ from tkinter import filedialog, ttk
 from PIL import Image, ImageTk
 import time
 import webbrowser
+from keywords import Extractor  # Import the Extractor class from keywords.py
 
 class JobMatchingApp:
     def __init__(self, root):
@@ -11,6 +12,7 @@ class JobMatchingApp:
         self.root.geometry("430x932")  # iPhone 15 Pro size
         self.root.configure(bg="#000000")  # Black background
         
+        self.extractor = Extractor()  # Initialize the Extractor
         self.show_welcome_page()
     
     def show_welcome_page(self):
@@ -79,49 +81,70 @@ class JobMatchingApp:
             self.progress = ttk.Progressbar(container, orient=tk.HORIZONTAL, length=300, mode='determinate', style="TProgressbar")
             self.progress.pack(pady=20)
             
-            self.root.after(500, self.animate_progress, self.show_find_jobs_page)
+            self.root.after(500, self.animate_progress, lambda: self.process_resume(file_path))
     
-    def show_find_jobs_page(self):
-        """Displays a page with a button to find jobs."""
+    def process_resume(self, file_path):
+        """Processes the uploaded resume and extracts skills."""
+        resume_text = self.extractor.return_resume_text(file_path)
+        if resume_text:
+            skills = self.extractor.extract_skills(resume_text)
+            self.show_skills_page(skills)
+        else:
+            self.show_skills_page("Error reading the file.")
+    
+    def show_skills_page(self, skills):
+        """Displays the extracted skills."""
         self.clear_screen()
         
         container = tk.Frame(self.root, bg="#000000")
         container.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
         
-        self.find_jobs_label = tk.Label(container, text="Ready to Find Jobs?", font=("Arial", 18, "bold"), bg="#000000", fg="#ffffff")
-        self.find_jobs_label.pack(pady=20)
+        self.skills_label = tk.Label(container, text="Extracted Skills", font=("Arial", 18, "bold"), bg="#000000", fg="#ffffff")
+        self.skills_label.pack(pady=20)
         
-        self.find_jobs_button = tk.Button(container, text="Find Jobs", command=self.show_job_search_page, font=("Arial", 14, "bold"), bg="#ffffff", fg="#000000", padx=20, pady=10, relief="flat", bd=0, width=20)
+        self.skills_text = tk.Text(container, wrap=tk.WORD, width=40, height=10, font=("Arial", 12), bg="#000000", fg="#ffffff")
+        self.skills_text.insert(tk.END, skills)
+        self.skills_text.pack(pady=20)
+        
+        self.find_jobs_button = tk.Button(container, text="Find Jobs", command=self.show_find_jobs_page, font=("Arial", 14, "bold"), bg="#ffffff", fg="#000000", padx=20, pady=10, relief="flat", bd=0, width=20)
         self.find_jobs_button.pack(pady=20)
     
-    def show_job_search_page(self):
-        """Displays the job search results in table format."""
+    def show_find_jobs_page(self):
+        """Displays the job search results in a card layout."""
         self.clear_screen()
         
+        # Define the container for the job cards
         container = tk.Frame(self.root, bg="#000000")
-        container.pack(fill=tk.BOTH, expand=True)
+        container.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
         
-        columns = ("S.No", "Company", "Job Title", "Due Date", "Link")
-        self.tree = ttk.Treeview(container, columns=columns, show="headings")
+        # Job data
+        jobs = [
+            {"company": "Google", "title": "Software Engineer", "due_date": "March 5, 2025", "link": "https://google.com/jobs"},
+            {"company": "Microsoft", "title": "Python Developer", "due_date": "March 10, 2025", "link": "https://microsoft.com/careers"},
+            {"company": "Amazon", "title": "Data Scientist", "due_date": "March 15, 2025", "link": "https://amazon.jobs"},
+        ]
         
-        for col in columns:
-            self.tree.heading(col, text=col)
-            self.tree.column(col, anchor="center", width=100)
-        
-        jobs = [(1, "Google", "Software Engineer", "March 5, 2025", "https://google.com/jobs"),
-                (2, "Microsoft", "Python Developer", "March 10, 2025", "https://microsoft.com/careers"),
-                (3, "Amazon", "Data Scientist", "March 15, 2025", "https://amazon.jobs")]
-        
+        # Create a card for each job
         for job in jobs:
-            self.tree.insert("", tk.END, values=job)
-        
-        self.tree.pack(pady=20)
-        self.tree.bind("<Double-1>", self.open_link)
-    
-    def open_link(self, event):
-        selected_item = self.tree.selection()[0]
-        link = self.tree.item(selected_item, "values")[4]
-        webbrowser.open(link)
+            card = tk.Frame(container, bg="#1e1e1e", padx=20, pady=20, relief=tk.RAISED, bd=2)
+            card.pack(fill=tk.X, pady=10, padx=10)
+            
+            # Company Name
+            company_label = tk.Label(card, text=job["company"], font=("Arial", 16, "bold"), bg="#1e1e1e", fg="#ffffff")
+            company_label.pack(anchor="w", pady=(0, 5))
+            
+            # Job Title
+            title_label = tk.Label(card, text=job["title"], font=("Arial", 14), bg="#1e1e1e", fg="#ffffff")
+            title_label.pack(anchor="w", pady=(0, 5))
+            
+            # Due Date
+            due_date_label = tk.Label(card, text=f"Due Date: {job['due_date']}", font=("Arial", 12), bg="#1e1e1e", fg="#ffffff")
+            due_date_label.pack(anchor="w", pady=(0, 10))
+            
+            # Apply Button
+            apply_button = tk.Button(card, text="Apply Now", font=("Arial", 12, "bold"), bg="#ffffff", fg="#000000", 
+                                    command=lambda link=job["link"]: webbrowser.open(link))
+            apply_button.pack(anchor="e")
     
     def clear_screen(self):
         """Removes all widgets from the window."""
