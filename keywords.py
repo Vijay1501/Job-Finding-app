@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import filedialog, scrolledtext
 import PyPDF2
 import docx
+import csv
 
 class JobMatchingApp:
     def __init__(self, root):
@@ -94,21 +95,17 @@ class Extractor:
             print(f"Error reading TXT file: {e}")
             return None
 
+ 
     def extract_skills(self, resume_text):
-        """Sends resume text to OpenAI API to extract hard and soft skills."""
+        """Sends resume text to OpenAI API to extract hard skills."""
         if not self.client:
             return "API key missing or invalid."
 
         prompt = f"""
-        Extract key hard skills (technical skills) and soft skills (interpersonal skills) from the following resume.
+        Extract key hard skills (technical skills) from the following resume.
         Format the response as follows:
 
         Hard Skills:
-        - Skill 1
-        - Skill 2
-        - Skill 3
-
-        Soft Skills:
         - Skill 1
         - Skill 2
         - Skill 3
@@ -122,12 +119,22 @@ class Extractor:
                 model="gpt-3.5-turbo",
                 messages=[{"role": "user", "content": prompt}]
             )
-            print(f"OpenAI Response:\n{response}")  # ✅ Debugging
-            return response.choices[0].message.content
+            skills = response.choices[0].message.content
+
+            # Extract only hard skills
+            hard_skills = [line.strip() for line in skills.split("\n") if line.startswith("-")]
+            
+            # Save hard skills to a CSV file
+            with open('skills.csv', 'w', newline='', encoding='utf-8') as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow(["Hard Skills"])
+                for skill in hard_skills:
+                    writer.writerow([skill])
+
+            return hard_skills  # Return only hard skills
         except Exception as e:
             print(f"Error calling OpenAI API: {e}")
             return f"Error calling OpenAI API: {e}"
-
 # Run the Tkinter app
 if __name__ == "__main__":
     root = tk.Tk()
