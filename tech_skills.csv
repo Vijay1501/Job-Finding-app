@@ -1,0 +1,51 @@
+Sr. No,Skill Name,Category,Description,Difficulty Level,Last Updated,Documentation Link
+1,Rust Memory Management,Systems Programming,Advanced ownership models and unsafe code practices,High,2024-11-04,https://rust-docs.org/Rust-Memory-Management
+2,Kubernetes Cluster Orchestration,Cloud Technologies,Multi-cloud cluster federation and CRD development,Extreme,2025-01-11,https://kubernetes-docs.org/Kubernetes-Cluster-Orchestration
+3,Apache Kafka Stream Processing,Data Engineering,Exactly-once semantics in distributed event streaming,Very High,2024-05-17,https://apache-docs.org/Apache-Kafka-Stream-Processing
+4,Zero Trust Architecture,Cybersecurity,Implementation of continuous verification systems,Extreme,2024-08-07,https://zero-docs.org/Zero-Trust-Architecture
+5,FPGA Programming,Embedded Systems,High-speed digital circuit design with VHDL,High,2024-05-15,https://fpga-docs.org/FPGA-Programming
+6,TensorFlow Distributed Training,AI/ML Frameworks,Advanced implementation of TensorFlow Distributed Training in production systems,Very High,2024-12-16,https://tensorflow-docs.org/TensorFlow-Distributed-Training
+7,ISTQB Advanced Level,QA Automation,Advanced implementation of ISTQB Advanced Level in production systems,Very High,2024-11-09,https://istqb-docs.org/ISTQB-Advanced-Level
+8,eBPF Kernel Programming,Linux Networking,Advanced implementation of eBPF Kernel Programming in production systems,Very High,2024-11-01,https://ebpf-docs.org/eBPF-Kernel-Programming
+9,VHDL/Verilog Synthesis,Hardware Design,Advanced implementation of VHDL/Verilog Synthesis in production systems,Very High,2025-01-24,https://vhdl/verilog-docs.org/VHDL/Verilog-Synthesis
+10,Prometheus+Grafana Monitoring,DevOps Tools,Advanced implementation of Prometheus+Grafana Monitoring in production systems,High,2024-12-03,https://prometheus+grafana-docs.org/Prometheus+Grafana-Monitoring
+11,CRDT Algorithms,Distributed Systems,Advanced implementation of CRDT Algorithms in production systems,Extreme,2024-10-01,https://crdt-docs.org/CRDT-Algorithms
+12,Homomorphic Encryption,Cryptography,Advanced implementation of Homomorphic Encryption in production systems,Extreme,2025-01-07,https://homomorphic-docs.org/Homomorphic-Encryption
+13,SPARK Formal Verification,Safety-Critical Systems,Advanced implementation of SPARK Formal Verification in production systems,High,2024-08-06,https://spark-docs.org/SPARK-Formal-Verification
+14,LLVM Compiler Development,Compiler Design,Advanced implementation of LLVM Compiler Development in production systems,Extreme,2024-11-07,https://llvm-docs.org/LLVM-Compiler-Development
+15,OpenMPI Cluster Computing,HPC,Advanced implementation of OpenMPI Cluster Computing in production systems,High,2025-02-11,https://openmpi-docs.org/OpenMPI-Cluster-Computing
+16,ROS2 Robotics Middleware,Robotics,Advanced implementation of ROS2 Robotics Middleware in production systems,Very High,2024-12-30,https://ros2-docs.org/ROS2-Robotics-Middleware
+17,DPDK Packet Processing,Network Programming,Advanced implementation of DPDK Packet Processing in production systems,Very High,2024-04-02,https://dpdk-docs.org/DPDK-Packet-Processing
+18,Apache Flink Stateful Streams,Real-time Analytics,Advanced implementation of Apache Flink Stateful Streams in production systems,High,2024-10-20,https://apache-docs.org/Apache-Flink-Stateful-Streams
+19,WebAssembly Runtime Optimization,Low-level Web,Advanced implementation of WebAssembly Runtime Optimization in production systems,Extreme,2024-07-08,https://webassembly-docs.org/WebAssembly-Runtime-Optimization
+20,Q# Quantum Algorithms,Quantum Computing,Advanced implementation of Q# Quantum Algorithms in production systems,Very High,2024-03-20,https://q#-docs.org/Q#-Quantum-Algorithms
+21,Solidity Smart Contracts,Blockchain,Advanced implementation of Solidity Smart Contracts in production systems,Extreme,2024-02-29,https://solidity-docs.org/Solidity-Smart-Contracts
+22,Apache Arrow Memory Format,In-Memory Computing,Advanced implementation of Apache Arrow Memory Format in production systems,Very High,2025-01-23,https://apache-docs.org/Apache-Arrow-Memory-Format
+23,Enzyme AD (Differentiation),Scientific Computing,Advanced implementation of Enzyme AD (Differentiation) in production systems,Very High,2024-05-23,https://enzyme-docs.org/Enzyme-AD-(Differentiation)
+24,Coreboot Firmware Development,System Firmware,Advanced implementation of Coreboot Firmware Development in production systems,High,2024-04-07,https://coreboot-docs.org/Coreboot-Firmware-Development
+25,Mesa3D Graphics Drivers,GPU Programming,Advanced implementation of Mesa3D Graphics Drivers in production systems,High,2024-08-18,https://mesa3d-docs.org/Mesa3D-Graphics-Drivers
+26,Zig Comptime Metaprogramming,Systems Language,Advanced implementation of Zig Comptime Metaprogramming in production systems,High,2024-06-16,https://zig-docs.org/Zig-Comptime-Metaprogramming
+27,Linux Kernel Module Development,OS Internals,Advanced implementation of Linux Kernel Module Development in production systems,High,2024-07-08,https://linux-docs.org/Linux-Kernel-Module-Development
+28,BPF Compiler Collection,Observability,Advanced implementation of BPF Compiler Collection in production systems,Extreme,2024-07-09,https://bpf-docs.org/BPF-Compiler-Collection
+29,OpenTelemetry Instrumentation,Distributed Tracing,Advanced implementation of OpenTelemetry Instrumentation in production systems,Extreme,2024-02-24,https://opentelemetry-docs.org/OpenTelemetry-Instrumentation
+30,Istio Service Mesh,Cloud Native,Advanced implementation of Istio Service Mesh in production systems,Very High,2024-03-15,https://istio-docs.org/Istio-Service-Mesh
+31,SPIR-V Shader Optimization,GPU Compute,Advanced implementation of SPIR-V Shader Optimization in production systems,High,2025-01-17,https://spir-v-docs.org/SPIR-V-Shader-Optimization
+32,MLIR Compiler Infrastructure,Compiler Intermediate,Advanced implementation of MLIR Compiler Infrastructure in production systems,High,2024-09-26,https://mlir-docs.org/MLIR-Compiler-Infrastructure
+33,Apache Iceberg Lakehouse,Big Data Formats,Advanced implementation of Apache Iceberg Lakehouse in production systems,Extreme,2024-09-15,https://apache-docs.org/Apache-Iceberg-Lakehouse
+34,Cilium Network Policies,Cloud Networking,Advanced implementation of Cilium Network Policies in production systems,High,2024-04-13,https://cilium-docs.org/Cilium-Network-Policies
+35,WebGPU API Development,Next-gen Graphics,Advanced implementation of WebGPU API Development in production systems,Very High,2024-03-02,https://webgpu-docs.org/WebGPU-API-Development
+36,gRPC Protocol Buffers,Microservices Communication,Advanced implementation of gRPC Protocol Buffers in production systems,Extreme,2024-10-06,https://grpc-docs.org/gRPC-Protocol-Buffers
+37,Apache Pulsar Functions,Event Streaming,Advanced implementation of Apache Pulsar Functions in production systems,High,2024-11-29,https://apache-docs.org/Apache-Pulsar-Functions
+38,WebRTC Low-latency,Real-time Communication,Advanced implementation of WebRTC Low-latency in production systems,Very High,2025-01-12,https://webrtc-docs.org/WebRTC-Low-latency
+39,OpenCV CUDA Acceleration,Computer Vision,Advanced implementation of OpenCV CUDA Acceleration in production systems,Very High,2024-08-16,https://opencv-docs.org/OpenCV-CUDA-Acceleration
+40,ONNX Runtime Optimization,Model Deployment,Advanced implementation of ONNX Runtime Optimization in production systems,Extreme,2024-08-09,https://onnx-docs.org/ONNX-Runtime-Optimization
+41,NixOS Configuration,Reproducible Builds,Advanced implementation of NixOS Configuration in production systems,Extreme,2024-05-16,https://nixos-docs.org/NixOS-Configuration
+42,Terraform Provider Development,Infrastructure as Code,Advanced implementation of Terraform Provider Development in production systems,High,2024-07-16,https://terraform-docs.org/Terraform-Provider-Development
+43,Envoy Filter Creation,API Gateways,Advanced implementation of Envoy Filter Creation in production systems,Extreme,2024-06-02,https://envoy-docs.org/Envoy-Filter-Creation
+44,WasmEdge Runtime,Edge Computing,Advanced implementation of WasmEdge Runtime in production systems,Extreme,2025-01-25,https://wasmedge-docs.org/WasmEdge-Runtime
+45,OpenStack Bare Metal,Private Cloud,Advanced implementation of OpenStack Bare Metal in production systems,High,2024-08-09,https://openstack-docs.org/OpenStack-Bare-Metal
+46,Kubernetes Operators SDK,Cloud Automation,Advanced implementation of Kubernetes Operators SDK in production systems,Very High,2024-09-13,https://kubernetes-docs.org/Kubernetes-Operators-SDK
+47,Apache Druid OLAP,Analytics Databases,Advanced implementation of Apache Druid OLAP in production systems,High,2024-09-29,https://apache-docs.org/Apache-Druid-OLAP
+48,Neo4j Cypher Queries,Graph Databases,Advanced implementation of Neo4j Cypher Queries in production systems,High,2024-12-22,https://neo4j-docs.org/Neo4j-Cypher-Queries
+49,Redis Module Development,In-Memory DBs,Advanced implementation of Redis Module Development in production systems,Extreme,2024-07-17,https://redis-docs.org/Redis-Module-Development
+50,PostgreSQL Query Optimization,RDBMS Tuning,Advanced implementation of PostgreSQL Query Optimization in production systems,Extreme,2025-02-18,https://postgresql-docs.org/PostgreSQL-Query-Optimization

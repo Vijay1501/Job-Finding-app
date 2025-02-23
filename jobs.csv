@@ -1,5 +1,51 @@
 Sr. No,Position,Company Name,Description,Due Date,Link to Apply
-1,Python Developer,Tech Corp,"Looking for Python developer with AWS experience",2023-12-31,career.techcorp.com
-2,Data Scientist,Data Inc,"Seeking ML engineer with SQL skills",2024-01-15,data-inc.com/careers
-3,Frontend Engineer,Web Start,"React developer needed for web applications",2024-02-01,webstart.dev/jobs
-4,Full Stack Developer,Amazon AWS,"Full Stack developer needed with skills of HTML CSS JavaScript MongoDB Express React Node",2025-02-25,aws.dev/jobs
+1,Mobile Developer,Secure IT Systems,Build and optimize mobile applications for iOS and Android platforms.,2023-12-31,https://careers.secure-it-systems.com/apply-mobile-developer-1
+2,Business Analyst,Tech Innovators Inc.,Identify business needs and recommend technical solutions.,2023-12-27,https://careers.tech-innovators-inc..com/apply-business-analyst-2
+3,HR Coordinator,Tech Innovators Inc.,Manage recruitment processes and employee relations activities.,2024-02-03,https://careers.tech-innovators-inc..com/apply-hr-coordinator-3
+4,Marketing Manager,EduTech Pioneers,Plan and execute marketing campaigns across multiple channels.,2024-02-19,https://careers.edutech-pioneers.com/apply-marketing-manager-4
+5,Financial Analyst,Secure IT Systems,"Conduct financial forecasting, reporting, and operational metrics tracking.",2024-03-28,https://careers.secure-it-systems.com/apply-financial-analyst-5
+6,SEO Specialist,Global Marketing Hub,Optimize website content and structure for search engine visibility.,2024-04-26,https://careers.global-marketing-hub.com/apply-seo-specialist-6
+7,Systems Architect,HealthTech Solutions,Design and implement enterprise-level IT systems.,2024-03-15,https://careers.healthtech-solutions.com/apply-systems-architect-7
+8,Content Writer,Travel Experts Ltd,Produce engaging written content for websites and marketing materials.,2024-04-02,https://careers.travel-experts-ltd.com/apply-content-writer-8
+9,Systems Architect,Cloud Networks Co.,Design and implement enterprise-level IT systems.,2024-01-19,https://careers.cloud-networks-co..com/apply-systems-architect-9
+10,Network Administrator,HealthTech Solutions,Manage and optimize corporate network infrastructure.,2024-01-11,https://careers.healthtech-solutions.com/apply-network-administrator-10
+11,Content Writer,Global Marketing Hub,Produce engaging written content for websites and marketing materials.,2023-11-10,https://careers.global-marketing-hub.com/apply-content-writer-11
+12,Sales Executive,FinSmart Services,Drive sales growth through client acquisition and relationship management.,2024-03-29,https://careers.finsmart-services.com/apply-sales-executive-12
+13,Content Writer,Secure IT Systems,Produce engaging written content for websites and marketing materials.,2024-03-25,https://careers.secure-it-systems.com/apply-content-writer-13
+14,HR Coordinator,Data Solutions Ltd.,Manage recruitment processes and employee relations activities.,2024-01-18,https://careers.data-solutions-ltd..com/apply-hr-coordinator-14
+15,DevOps Engineer,Tech Innovators Inc.,Implement and maintain CI/CD pipelines and cloud infrastructure.,2023-11-10,https://careers.tech-innovators-inc..com/apply-devops-engineer-15
+16,Systems Architect,Tech Innovators Inc.,Design and implement enterprise-level IT systems.,2024-01-28,https://careers.tech-innovators-inc..com/apply-systems-architect-16
+17,Systems Architect,FinSmart Services,Design and implement enterprise-level IT systems.,2023-11-13,https://careers.finsmart-services.com/apply-systems-architect-17
+18,UX Designer,Tech Innovators Inc.,Design intuitive user interfaces and improve product usability.,2024-02-01,https://careers.tech-innovators-inc..com/apply-ux-designer-18
+19,DevOps Engineer,HealthTech Solutions,Implement and maintain CI/CD pipelines and cloud infrastructure.,2023-11-17,https://careers.healthtech-solutions.com/apply-devops-engineer-19
+20,Project Manager,Creative Minds Agency,Lead cross-functional teams to deliver projects on time and within budget.,2024-03-05,https://careers.creative-minds-agency.com/apply-project-manager-20
+21,Graphic Designer,HealthTech Solutions,Create visual content for digital and print media platforms.,2024-03-11,https://careers.healthtech-solutions.com/apply-graphic-designer-21
+22,Mobile Developer,Travel Experts Ltd,Build and optimize mobile applications for iOS and Android platforms.,2023-12-01,https://careers.travel-experts-ltd.com/apply-mobile-developer-22
+23,Product Manager,Data Solutions Ltd.,Oversee product lifecycle from ideation to launch and optimization.,2024-03-27,https://careers.data-solutions-ltd..com/apply-product-manager-23
+24,Digital Marketing Specialist,AutoTech Group,Manage online advertising campaigns and social media strategy.,2024-03-06,https://careers.autotech-group.com/apply-digital-marketing-specialist-24
+25,Mobile Developer,FinSmart Services,Build and optimize mobile applications for iOS and Android platforms.,2024-01-19,https://careers.finsmart-services.com/apply-mobile-developer-25
+26,Mobile Developer,Future Vision Technologies,Build and optimize mobile applications for iOS and Android platforms.,2023-11-16,https://careers.future-vision-technologies.com/apply-mobile-developer-26
+27,Graphic Designer,Creative Minds Agency,Create visual content for digital and print media platforms.,2024-01-12,https://careers.creative-minds-agency.com/apply-graphic-designer-27
+28,UX Designer,AutoTech Group,Design intuitive user interfaces and improve product usability.,2024-04-14,https://careers.autotech-group.com/apply-ux-designer-28
+29,Network Administrator,Future Vision Technologies,Manage and optimize corporate network infrastructure.,2024-03-26,https://careers.future-vision-technologies.com/apply-network-administrator-29
+30,Financial Analyst,Creative Minds Agency,"Conduct financial forecasting, reporting, and operational metrics tracking.",2024-02-25,https://careers.creative-minds-agency.com/apply-financial-analyst-30
+31,Marketing Manager,EduTech Pioneers,Plan and execute marketing campaigns across multiple channels.,2024-01-09,https://careers.edutech-pioneers.com/apply-marketing-manager-31
+32,Data Analyst,AutoTech Group,Analyze complex datasets to provide business insights and recommendations.,2023-12-25,https://careers.autotech-group.com/apply-data-analyst-32
+33,Marketing Manager,Creative Minds Agency,Plan and execute marketing campaigns across multiple channels.,2024-02-07,https://careers.creative-minds-agency.com/apply-marketing-manager-33
+34,Business Analyst,Global Marketing Hub,Identify business needs and recommend technical solutions.,2024-04-06,https://careers.global-marketing-hub.com/apply-business-analyst-34
+35,HR Coordinator,Data Solutions Ltd.,Manage recruitment processes and employee relations activities.,2024-01-22,https://careers.data-solutions-ltd..com/apply-hr-coordinator-35
+36,Financial Analyst,HealthTech Solutions,"Conduct financial forecasting, reporting, and operational metrics tracking.",2024-03-19,https://careers.healthtech-solutions.com/apply-financial-analyst-36
+37,Business Analyst,FinSmart Services,Identify business needs and recommend technical solutions.,2024-03-02,https://careers.finsmart-services.com/apply-business-analyst-37
+38,Data Analyst,Creative Minds Agency,Analyze complex datasets to provide business insights and recommendations.,2024-02-17,https://careers.creative-minds-agency.com/apply-data-analyst-38
+39,Product Manager,EduTech Pioneers,Oversee product lifecycle from ideation to launch and optimization.,2024-01-28,https://careers.edutech-pioneers.com/apply-product-manager-39
+40,HR Coordinator,Global Marketing Hub,Manage recruitment processes and employee relations activities.,2024-04-06,https://careers.global-marketing-hub.com/apply-hr-coordinator-40
+41,Product Manager,EduTech Pioneers,Oversee product lifecycle from ideation to launch and optimization.,2024-02-17,https://careers.edutech-pioneers.com/apply-product-manager-41
+42,HR Coordinator,EduTech Pioneers,Manage recruitment processes and employee relations activities.,2023-11-13,https://careers.edutech-pioneers.com/apply-hr-coordinator-42
+43,Systems Architect,FoodTech Industries,Design and implement enterprise-level IT systems.,2024-01-17,https://careers.foodtech-industries.com/apply-systems-architect-43
+44,Data Analyst,Travel Experts Ltd,Analyze complex datasets to provide business insights and recommendations.,2024-04-29,https://careers.travel-experts-ltd.com/apply-data-analyst-44
+45,Business Analyst,FoodTech Industries,Identify business needs and recommend technical solutions.,2023-11-28,https://careers.foodtech-industries.com/apply-business-analyst-45
+46,Mobile Developer,Data Solutions Ltd.,Build and optimize mobile applications for iOS and Android platforms.,2023-12-10,https://careers.data-solutions-ltd..com/apply-mobile-developer-46
+47,Marketing Manager,AutoTech Group,Plan and execute marketing campaigns across multiple channels.,2024-04-24,https://careers.autotech-group.com/apply-marketing-manager-47
+48,Network Administrator,Green Energy Corp,Manage and optimize corporate network infrastructure.,2024-02-04,https://careers.green-energy-corp.com/apply-network-administrator-48
+49,QA Tester,EduTech Pioneers,Ensure software quality through rigorous testing protocols.,2024-03-02,https://careers.edutech-pioneers.com/apply-qa-tester-49
+50,QA Tester,FoodTech Industries,Ensure software quality through rigorous testing protocols.,2024-04-12,https://careers.foodtech-industries.com/apply-qa-tester-50
