@@ -1,7 +1,7 @@
 import csv
 from datetime import datetime
 
-def read_skills(filename='tech_skills.csv'):
+def read_skills(filename='skills.csv'):
     """Read skills from CSV file"""
     with open(filename, 'r') as f:
         return [skill.strip().lower() for row in csv.reader(f) for skill in row if skill.strip()]
