@@ -26,8 +26,8 @@ class JobMatchingApp:
         if file_path:
             resume_text = self.extractor.return_resume_text(file_path)
             if resume_text:
-                print(f"Extracted Resume Text:\n{resume_text[:500]}...")  # ✅ Debugging
-                skills = self.extractor.extract_skills(resume_text)  # ✅ Ensure this method exists
+                print(f"Extracted Resume Text:\n{resume_text[:500]}...") 
+                skills = self.extractor.extract_skills(resume_text)  
                 self.result_box.delete("1.0", tk.END)
                 self.result_box.insert(tk.END, skills)
             else:
@@ -38,7 +38,7 @@ class Extractor:
         """Initializes OpenAI API client with the API key."""
         self.api_key = self.get_api_key()
         if self.api_key:
-            self.client = openai.OpenAI(api_key=self.api_key)  # ✅ Correct way to set API key
+            self.client = openai.OpenAI(api_key=self.api_key) 
         else:
             self.client = None  # Prevents API calls if key is missing
 
